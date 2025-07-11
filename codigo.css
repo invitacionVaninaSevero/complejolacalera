@@ -1,0 +1,344 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Libertinus+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: "Anton", sans-serif;
+}
+
+:root {
+
+--primary: #ff7b00;
+--secondary: #00adb5;
+--tertiary: #ff0061;
+--quaternary: rgb(231, 201, 50); 
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.centrado {
+   width: 80%;
+  margin: 0 auto;
+}
+
+.classA{
+  background-color: black;
+  text-decoration: none;
+  text-shadow: none;
+  padding: 1vw;
+  color: white;
+  transition: transform 0.3s;
+  font-size: 2vw;
+  border-radius: 20%;
+} 
+
+.classA:hover{
+background-color: var(--secondary);
+transform: scale(1.2);
+} 
+
+h2{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+p{
+  font-size: 1em;
+} 
+
+/* ---------------------------------------   HEADER ---------------------------------------------------*/
+/* --- HEADER GENERAL --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(11, 78, 40);
+  padding: 1.5vh 5vw;
+  position: relative;
+}
+
+header img {
+  width: 60px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Menú horizontal en PC */
+nav.navegador {
+  display: flex;
+  gap: 2vw;
+}
+
+.navegador a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navegador a:hover {
+  background-color: var(--secondary);
+}
+
+
+/* ----------------------------------------------PORTADA---------------------------------------------------------- */
+ #portada{
+  
+  padding: 20%;
+  background-image: url(imagenes\ OBL/portada.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  text-shadow: 2px 2px 4px white;
+
+}
+h1{
+    font-size: 10vw;
+}
+
+#portada p {
+    font-size: 2vw;
+}
+
+
+/* -------------------------------------------ARTISTAS----------------------------------------------------------------------- */
+
+
+.flexbox {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  justify-content: space-between; /* separa los elementos */
+  padding: 10%;
+  gap: 20px; /* espacio entre texto e imagen */
+}
+
+
+
+.flexbox .texto h3 {
+  font-size: 1em;        /* más grande que el texto base */
+  margin-bottom: 0.5em;  /* espacio entre el h3 y el párrafo */
+}
+
+.flexbox .texto p {
+  font-size: 0.5em;       /* más pequeño que el tamaño base */
+  line-height: 1.5;       /* mejor legibilidad */
+}
+
+.flexbox .imagen img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+/* ------------------------------------------ COMO LLEGAR------------------------------------ */
+ #como-llegar {
+  padding: 5%;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#como-llegar h2 {
+  font-size:1em;
+  margin-bottom: 20px;
+}
+
+#como-llegar .mapa {
+  max-width: 500px;
+  max-height: 200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+/* -------------------------------------------------TABLAS --------------------------------------------- */
+
+
+/* --------------------------------------- PRODUCTOS ------------------------------------- */
+
+/*----------------------------------------------- CONOCE MAS ----------------------------------------------------- */
+
+/*--------------------------------------- FOOTER--------------------------------------------------------------------------------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(11, 78, 40);
+}
+
+footer img {
+
+  width: 5%;
+}
+
+footer a {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  color: white;
+}
+/* ------------------ MEDIA QUERIES RESPONSIVAS ------------------ */
+@media (max-width: 1024px) {
+  .classA {
+    font-size: 3vw;
+  }
+
+  .navegador a {
+    font-size: 2vw;
+  }
+
+  header img {
+    width: 6vw;
+  }
+
+  #portada {
+    padding: 15%;
+  }
+
+  #portada p {
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 12vw;
+  }
+
+  .flexbox .texto h3 {
+    font-size: 1.2em;
+  }
+
+  .flexbox .texto p {
+    font-size: 0.8em;
+  }
+
+
+  .centrado {
+    width: 90%;
+  }
+
+  .flexbox {
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+  }
+
+  .flexbox .imagen img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .classA {
+    font-size: 4vw;
+    padding: 2vw;
+  }
+
+  h1 {
+    font-size: 14vw;
+  }
+
+  #portada {
+    padding: 25% 10%;
+  }
+
+  #portada p {
+    font-size: 4vw;
+  }
+
+  #como-llegar h2 {
+    font-size: 1.5em;
+  }
+
+  #como-llegar .mapa {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  footer img {
+    width: 15%;
+  }
+
+  footer a {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navegador a {
+    font-size: 4vw;
+  }
+
+  .flexbox .texto h3 {
+    font-size: 1.4em;
+  }
+
+  .flexbox .texto p {
+    font-size: 0.9em;
+  }
+
+  #como-llegar h2 {
+    font-size: 1.8em;
+  }
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.navegador {
+    position: fixed;
+    top: 0;
+    left: -100%; /* ← abrimos desde la izquierda */
+    height: 100vh;
+    width: 70%;
+    background-color: rgb(11, 78, 40);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 1.5rem;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  nav.navegador.active {
+    left: 0;
+  }
+
+  .navegador a {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+

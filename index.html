@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LA CALERA</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="favicon_io/favicon-16x16.png" />
+    <link rel="stylesheet" href="codigo.css" />
+   
+
+  </head>
+  <!-- ------------------------------------------------------------------------------------------ -->
+  <body>
+    <section id="header">
+    
+   
+<header>
+  <img src="imagenes OBL/logo.png" alt="Logo">
+
+  <button class="menu-toggle" id="menu-toggle">
+    ☰
+  </button>
+
+  <nav class="navegador" id="nav-menu">
+    <a href="#portada">Inicio</a>
+    <a href="#artistas">Complejo</a>
+    <a href="#como-llegar">Cómo llegar</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+ </section>
+    <!--  ---------------------------------PORTADA-------------------------------------------------------     -->
+    <div id="portada">
+      <!-- <p>Argentina 2024</p>
+      <h1>LOLLAPALOOZA</h1>
+      <a class="classA" href="#artistas">VER MAS</a> -->
+    </div>
+    <!-- ---------------------------- ARTISTAS ----------------------------------------------------------------- -->
+    <section id="artistas">
+
+<div class="flexbox">
+  <div class="texto">
+    <h3>COMPLEJO LA CALERA</h3>
+    <p>
+      En nuestro predio vas a poder jugar en las mejores canchas de la ciudad.
+      Cuidamos y mantenemos el predio en óptimas condiciones para que nuestros 
+      jugadores puedan disfrutar de una gran jornada en 7 canchas de césped natural.
+    </p>
+  </div>
+  <div class="imagen">
+    <img src="imagenes OBL/cancha.jpg" alt="Cancha de fútbol">
+  </div>
+</div>
+
+
+    </section >
+    <!-- --------------------------------------------------- COMO LLEGAR ------------------------------------- -->
+<section id="como-llegar">
+  <h2>CÓMO LLEGAR</h2>
+  <div class="mapa">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6554.755094470931!2d-56.1214933!3d-34.7712696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a02b002b0a66b3%3A0x7840ca94ad7e877b!2sComplejo%20La%20Calera!5e0!3m2!1ses-419!2suy!4v1752202923382!5m2!1ses-419!2suy"
+   width="600" 
+   height="450"
+    style="border:0;"
+     allowfullscreen="" 
+     loading="lazy" 
+     referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+    <!-------------------------------------------------------TABLA---------------------------------------------------------------------------- -->
+
+    <!-- -----------------------------------------FOOTER-------------------------------------------------- -->
+
+    <footer>
+      <img src="imagenes OBL/logo.png" alt="Logo La Calera" />
+      <a href="#header">© LaCalera by Camila Delgado.</a>
+    </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-menu');
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    // Cerrar menú al tocar un enlace
+    const links = nav.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+    });
+  });
+</script>
+
+
+  </body>
+</html>
